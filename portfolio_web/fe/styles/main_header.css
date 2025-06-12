@@ -1,0 +1,113 @@
+/* Header Section
+----------------- */
+header {
+    margin-top: 15vh;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-left{
+    margin-top: 10vh;
+}
+
+.header-left h2{
+    color: #000000;
+    font-family: var(--baloo-2);
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 3.8rem;
+}
+
+.header-left h1{
+    font-size: 4rem;
+    font-family: var(--baloo-2);
+    background: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+.header-left p {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    font-size: 1.2rem;
+    font-family: var(--inria-sans);
+    color: #00000099;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
+.standard-btn {
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    color: white;
+    width: 130px;
+    height: 42px;
+    border: none;
+    border-radius: 19px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    font-size: 1.05rem;
+    font-weight: bold;
+    font-family: var(--inria-sans);
+}
+
+.header-right img {
+    width: 600px;
+    max-width: 80vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+/* Responsive: shrink image as screen gets smaller */
+@media (max-width: 1250px) {
+    .header-right img {
+        /* width: 400px;
+        max-width: 70vw; */
+        max-width: 60vw;
+        width: 460px;
+    }
+}
+
+/* Stack image below text on small screens */
+@media (max-width: 1060px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .header-left,
+    .header-right {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .header-left {
+        margin-top: 6vh;
+        margin-bottom: 2rem;
+    }
+    .header-right img {
+        width: 65vw;
+        max-width: 500px;
+        margin: 0 auto 2rem auto;
+    }
+}
+
+
+.hire-me-btn{
+    padding: 12px 36px;
+}

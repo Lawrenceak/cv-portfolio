@@ -1,0 +1,104 @@
+.projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-left: 15px;
+  min-height: 110vh;
+}
+
+.left-column {
+    width: 45%;
+}
+
+.left-column p{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: var(--color-body);
+    font-weight: 500;
+    font-family: var(--nuninto-sans);
+    padding: 20px 0 35px 0;
+}
+
+.right-column {
+  position: relative;
+  min-height: 500px; /* or as needed */
+}
+
+.project-card.card1 { top: 0; right: 40px; }
+.project-card.card2 { top: 200px; right: 390px; }
+.project-card.card3 { top: 390px; right: 70px; }
+
+/* Project Card
+--------------- */
+.project-card {
+    width: 280px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center;
+    font-family: var(--nuninto-sans);
+    position: absolute;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 150px;
+}
+
+.project-card h3 {
+    font-family: var(--nuninto-sans);
+    margin: 15px 0 10px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.project-card p {
+    font-family: var(--nuninto-sans);
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    color: rgba(0, 0, 0, 0.45);
+    padding: 0 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1450px) {
+    .project-card.card2 { top: 250px; right: 390px; }
+}
+
+@media (max-width: 1150px) {
+    .right-column {
+        margin-top: 30px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px; /* optional: space between cards */
+        min-height: unset;
+        justify-content: center;
+    }
+    .project-card {
+        position: static;
+        margin-bottom: 24px; /* optional: vertical spacing */
+        width: 250px;
+    }
+    .left-column {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .left-column {
+      width: 100%;
+      align-items: center;
+    }
+}

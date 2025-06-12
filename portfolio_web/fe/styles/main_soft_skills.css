@@ -1,0 +1,229 @@
+.soft-skills {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.center-bubble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 160px;
+  height: 160px;
+  margin: -80px 0 0 -80px;
+  background: rgb(245, 178, 29);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.center-bubble:hover{
+  background-image: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 100%);
+  box-shadow: 0 4px 16px rgba(255, 174, 0, 0.8);
+}
+
+.orbit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: orbit var(--spnning-time) linear infinite;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.orbit-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: center;
+}
+
+.bubble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  font-family: var(--nuninto-sans);
+  transform: translate(-50%, -50%) translateX(220px); /* Increased from 180px */
+  pointer-events: auto; /* allow pointer events */
+  z-index: 5; /* ensure bubble is above orbit */
+}
+
+.bubble span {
+  font-weight: normal;
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+  color: #444;
+}
+
+.bubble:hover{
+  background-image: radial-gradient(
+    ellipse at 60% 40%, 
+    white 0%, 
+    rgb(246, 246, 246) 70%, 
+    rgb(220, 220, 220) 100%
+  );
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Place each bubble at different angles */
+.orbit-wrapper:nth-child(1) { transform: rotate(0deg); }
+.orbit-wrapper:nth-child(2) { transform: rotate(72deg); }
+.orbit-wrapper:nth-child(3) { transform: rotate(144deg); }
+.orbit-wrapper:nth-child(4) { transform: rotate(216deg); }
+.orbit-wrapper:nth-child(5) { transform: rotate(288deg); }
+/* .orbit-wrapper:nth-child(6) { transform: rotate(225deg); }
+.orbit-wrapper:nth-child(7) { transform: rotate(270deg); }
+.orbit-wrapper:nth-child(8) { transform: rotate(315deg); } */
+
+/* Rotate the whole orbit */
+@keyframes orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Counter animations for each bubble */
+.orbit-wrapper:nth-child(1) .bubble { animation: counterOrbit0 var(--spnning-time) linear infinite; }
+.orbit-wrapper:nth-child(2) .bubble { animation: counterOrbit45 var(--spnning-time) linear infinite; }
+.orbit-wrapper:nth-child(3) .bubble { animation: counterOrbit90 var(--spnning-time) linear infinite; }
+.orbit-wrapper:nth-child(4) .bubble { animation: counterOrbit135 var(--spnning-time) linear infinite; }
+.orbit-wrapper:nth-child(5) .bubble { animation: counterOrbit180 var(--spnning-time) linear infinite; }
+/* .orbit-wrapper:nth-child(6) .bubble { animation: counterOrbit225 var(--spnning-time) linear infinite; }
+.orbit-wrapper:nth-child(7) .bubble { animation: counterOrbit270 var(--spnning-time) linear infinite; }
+.orbit-wrapper:nth-child(8) .bubble { animation: counterOrbit315 var(--spnning-time) linear infinite; } */
+
+@keyframes counterOrbit0 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(0deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-360deg); }
+}
+@keyframes counterOrbit45 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-72deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-432deg); }
+}
+@keyframes counterOrbit90 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-144deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-504deg); }
+}
+@keyframes counterOrbit135 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-216deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-576deg); }
+}
+@keyframes counterOrbit180 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-288deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-648deg); }
+}
+/* @keyframes counterOrbit225 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-225deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-585deg); }
+}
+@keyframes counterOrbit270 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-270deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-630deg); }
+}
+@keyframes counterOrbit315 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-315deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-675deg); }
+} */
+
+
+@media (max-width: 1000px) {
+  #soft-skills {
+    margin-top: 100px;
+  }
+}
+
+
+/* for 8 bubbles */
+
+/* Place each bubble at different angles */
+/* .orbit-wrapper:nth-child(1) { transform: rotate(0deg); }
+.orbit-wrapper:nth-child(2) { transform: rotate(45deg); }
+.orbit-wrapper:nth-child(3) { transform: rotate(90deg); }
+.orbit-wrapper:nth-child(4) { transform: rotate(135deg); }
+.orbit-wrapper:nth-child(5) { transform: rotate(180deg); }
+.orbit-wrapper:nth-child(6) { transform: rotate(225deg); }
+.orbit-wrapper:nth-child(7) { transform: rotate(270deg); }
+.orbit-wrapper:nth-child(8) { transform: rotate(315deg); }
+
+@keyframes orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.orbit-wrapper:nth-child(1) .bubble { animation: counterOrbit0 var(--spnning-time) linear infinite; }
+.orbit-wrapper:nth-child(2) .bubble { animation: counterOrbit45 var(--spnning-time) linear infinite; }
+.orbit-wrapper:nth-child(3) .bubble { animation: counterOrbit90 var(--spnning-time) linear infinite; }
+.orbit-wrapper:nth-child(4) .bubble { animation: counterOrbit135 var(--spnning-time) linear infinite; }
+.orbit-wrapper:nth-child(5) .bubble { animation: counterOrbit180 var(--spnning-time) linear infinite; }
+.orbit-wrapper:nth-child(6) .bubble { animation: counterOrbit225 var(--spnning-time) linear infinite; }
+.orbit-wrapper:nth-child(7) .bubble { animation: counterOrbit270 var(--spnning-time) linear infinite; }
+.orbit-wrapper:nth-child(8) .bubble { animation: counterOrbit315 var(--spnning-time) linear infinite; }
+
+@keyframes counterOrbit0 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(0deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-360deg); }
+}
+@keyframes counterOrbit45 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-45deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-405deg); }
+}
+@keyframes counterOrbit90 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-90deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-450deg); }
+}
+@keyframes counterOrbit135 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-135deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-495deg); }
+}
+@keyframes counterOrbit180 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-180deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-540deg); }
+}
+@keyframes counterOrbit225 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-225deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-585deg); }
+}
+@keyframes counterOrbit270 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-270deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-630deg); }
+}
+@keyframes counterOrbit315 {
+  from { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-315deg); }
+  to { transform: translate(-50%, -50%) translateX(var(--bubbles-spacing)) rotate(-675deg); }
+}
+
+
+@media (max-width: 1000px) {
+  #soft-skills {
+    margin-top: 100px;
+  }
+} */

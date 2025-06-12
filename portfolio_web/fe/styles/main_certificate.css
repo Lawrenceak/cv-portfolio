@@ -1,0 +1,110 @@
+#certificates{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.certificates{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 80px auto 30px auto;
+    border-radius: 18px;
+    width: 75%;
+}
+
+.contour{
+    width: 100%;
+    border: 2px solid #FFD700;
+    padding: 0 30px 12vh 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.contour div{
+    width: 67%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: self-start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contour img{
+    position: relative;
+    top: 15px;
+    left: -43%;
+    width: 90px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+.contour h2{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-family: var(--baloo-2);
+    /* font-size: 2.5rem; */
+    font-weight: 600;
+    font-size: clamp(2rem, 4vw, 2.7rem);
+    margin-top: -50px;
+}
+
+.contour h3{
+    font-family: var(--baloo-2);
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 2.6rem;
+
+    background: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.contour h4{
+    color: rgba(0,0,0,0.50);
+    font-family: var(--baloo-2);
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contour p{
+    font-family: var(--nuninto-sans);
+    color: rgba(0,0,0,0.55);
+    font-size: 1.1rem;
+    padding: 0 5vw;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    .contour h2{
+        margin-top: 0;
+    }
+
+    .certificates{
+        width: 90%;
+    }
+}
+
+.certificate-edition{
+    border-radius: 10px;
+    width: 40%;
+    align-self: center;
+}
