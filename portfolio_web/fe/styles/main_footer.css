@@ -41,7 +41,16 @@
 
 @media (max-width: 500px) {
     .contact-info{
-        font-size: 0.9rem;
+        font-size: 0.75rem;
+        height: 1.8rem;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .contact-info{
+        font-size: 0.6rem;
+        height: 1.6rem;
     }
 }
 

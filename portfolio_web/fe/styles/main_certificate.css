@@ -41,12 +41,12 @@
 }
 
 .contour img{
-    position: relative;
-    top: 15px;
-    left: -43%;
+    /* position: relative; */
+    /* top: 15px; */
+    /* left: -43%; */
+    align-self: flex-start;
     width: 90px;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin: 15px 0 -30px 5px;
 }
 
 
@@ -109,12 +109,18 @@
     }
 }
 
+@media (max-width: 500px) {
+    .contour img{
+        align-self: center;
+        margin-bottom: 5px;
+    }
+}
+
 .certificate-edition{
     border-radius: 10px;
     width: 40%;
     align-self: center;
 }
-
 
 
 .certificates {

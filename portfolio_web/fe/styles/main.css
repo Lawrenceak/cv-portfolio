@@ -369,6 +369,10 @@ nav.scrolled {
   .popup2-content {
     padding: 30px 20px 20px 20px;
   }
+
+  .nav-container{
+    padding: 1.2rem 1.3rem;
+  }
 }
 
 
