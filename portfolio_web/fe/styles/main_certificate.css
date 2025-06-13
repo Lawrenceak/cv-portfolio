@@ -1,7 +1,7 @@
 #certificates{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .certificates{
@@ -12,7 +12,7 @@
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.25);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin: 80px auto 30px auto;
+    margin: 0 auto 30px auto;
     border-radius: 18px;
     width: 75%;
 }
@@ -57,17 +57,17 @@
     font-family: var(--baloo-2);
     /* font-size: 2.5rem; */
     font-weight: 600;
-    font-size: clamp(2rem, 4vw, 2.7rem);
+    font-size: clamp(1rem, 4vw, 2.7rem);
     margin-top: -50px;
 }
 
 .contour h3{
     font-family: var(--baloo-2);
-    font-size: 2.4rem;
+    font-size: clamp(1.3rem, 3vw, 2.4rem);
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 10px;
-    line-height: 2.6rem;
+    line-height: clamp(1.3rem, 3vw, 2.6rem);
 
     background: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 100%);
     -webkit-background-clip: text;
@@ -95,11 +95,17 @@
 
 @media (max-width: 900px) {
     .contour h2{
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     .certificates{
         width: 90%;
+    }
+
+    .certificate-edition{
+        font-size: 0.9rem;
+        line-height: 1rem;
+        /* padding: 10px 0 !important; */
     }
 }
 
@@ -107,4 +113,71 @@
     border-radius: 10px;
     width: 40%;
     align-self: center;
+}
+
+
+
+.certificates {
+  position: relative;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.8s ease, background 0.8s ease;
+  overflow: hidden;
+}
+
+.certificates::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.certificates > .contour {
+  position: relative;
+  z-index: 2;
+}
+
+/* Gradient container layer */
+.certificates::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    #ff4d4d,
+    #ff944d,
+    #ffe04d,
+    #a2ffae,
+    #4dd9ff,
+    #4d6dff,
+    #d04dff,
+    #ff4da6,
+    #ff4d4d
+  );
+  background-size: 300% 300%;
+  border-radius: 18px;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  animation: rainbowFlow 8s linear infinite;
+  pointer-events: none;
+}
+
+.certificates:hover::after {
+  opacity: 1;
+}
+
+@keyframes rainbowFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

@@ -22,7 +22,7 @@
 
 .right-column {
   position: relative;
-  min-height: 500px; /* or as needed */
+  min-height: 500px;
 }
 
 .project-card.card1 { top: 0; right: 40px; }
@@ -82,13 +82,13 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px; /* optional: space between cards */
+        gap: 24px;
         min-height: unset;
         justify-content: center;
     }
     .project-card {
         position: static;
-        margin-bottom: 24px; /* optional: vertical spacing */
+        margin-bottom: 24px;
         width: 250px;
     }
     .left-column {

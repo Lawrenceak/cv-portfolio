@@ -267,3 +267,29 @@ window.addEventListener("click", (e) => {
 subscribeBtn.onclick = () => {
   window.open("https://youtube.com/@LawrenceAbouKarroum", "_blank");
 };
+
+
+
+// Lightings animation
+ document.querySelectorAll('.bubble').forEach(bubble => {
+  let timeout;
+
+  bubble.addEventListener('mouseenter', () => {
+    clearTimeout(timeout);
+    bubble.classList.remove('fade-out');
+    bubble.classList.add('glowing');
+    // Set random animation-delay between -3s and 0s (glowPulse is 3s long)
+    const randomDelay = -Math.random() * 3; 
+    bubble.style.animationDelay = `${randomDelay}s`;
+  });
+
+  bubble.addEventListener('mouseleave', () => {
+    bubble.classList.remove('glowing');
+    bubble.classList.add('fade-out');
+    bubble.style.animationDelay = ''; // reset animation delay
+
+    timeout = setTimeout(() => {
+      bubble.classList.remove('fade-out');
+    }, 600);
+  });
+});

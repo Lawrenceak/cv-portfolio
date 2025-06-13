@@ -73,11 +73,8 @@ header {
     flex: 1;
 }
 
-/* Responsive: shrink image as screen gets smaller */
 @media (max-width: 1250px) {
     .header-right img {
-        /* width: 400px;
-        max-width: 70vw; */
         max-width: 60vw;
         width: 460px;
     }
