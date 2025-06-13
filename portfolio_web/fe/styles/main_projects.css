@@ -4,7 +4,7 @@
   justify-content: space-between;
   margin-top: 15px;
   margin-left: 15px;
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
 .left-column {
@@ -22,21 +22,21 @@
 
 .right-column {
   position: relative;
-  min-height: 500px;
+  min-height: 300px;  /* Control Height from here as well */
 }
 
 .project-card.card1 { top: 0; right: 40px; }
 .project-card.card2 { top: 200px; right: 390px; }
-.project-card.card3 { top: 390px; right: 70px; }
+.project-card.card3 { top: 410px; right: 70px; }
 
 /* Project Card
 --------------- */
 .project-card {
-    width: 280px;
-    height: 350px;
+    width: 270px;
+    height: 370px;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
-    padding: 15px;
+    padding: 15px 13px 20px 13px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
     text-align: center;
@@ -101,8 +101,22 @@
       width: 100%;
       align-items: center;
     }
+}
 
+@media (max-height: 800px) {
     .projects-section{
-        margin-top: 0px;
+        min-height: 120vh;
+    }
+}
+
+@media (max-height: 600px) {
+    .projects-section{
+        min-height: 130vh;
+    }
+}
+
+@media (max-height: 500px) {
+    .projects-section{
+        min-height: 150vh;
     }
 }
