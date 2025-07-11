@@ -182,6 +182,7 @@ p{
 @media (max-width: 590px) {  
     .play-button{
         top: 35%;
+        left:40%;
     }
 }
 
