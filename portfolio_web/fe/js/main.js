@@ -84,6 +84,11 @@ document.getElementById('send-message').addEventListener('click', async () => {
 });
 
 
+document.getElementById('prj_seemore_btn').addEventListener('click', () => {
+    window.open('projects.html', '_blank');
+});
+
+
 // Popup functionality
 const popup = document.getElementById("popup");
 const popupMessage = document.getElementById("popupMessage");
@@ -92,7 +97,6 @@ const closeBtn = document.getElementById("closePopup");
 // Message map (you can also use a switch-case if you prefer)
 const messages = {
   cv_download: "For security and privacy reasons, direct CV downloads are no longer available. If you would like a copy of my CV, please feel free to reach out through any of the contact methods listed in the Contact section.\n\nThank you for your understanding.",
-  prj_seemore_btn: "To see more projects visit my GitHub and/or my Youtube page - links in the Contacts section!",
   cert_seemore_btn: "I got some more certificates, currently on my LinkedIn page!"
 };
 

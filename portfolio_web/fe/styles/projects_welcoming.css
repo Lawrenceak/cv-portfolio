@@ -1,0 +1,132 @@
+/* Welcoming */
+
+main{
+    position: relative;
+}
+
+.welcoming-projects{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    height: 80vh;
+}
+
+/* Left Side */
+.wlc-left{
+    width: 50%;
+}
+
+.border-top-left{
+    width: 150px;
+    height: 150px;
+    /* display: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    border-top: 10px solid orange;
+    border-left: 10px solid orange;
+    border-top-left-radius: 10px;
+}
+
+.wlc-writing{
+    width: 50%;
+    font-family: var(--baloo-2);
+    display: block;
+    margin: auto auto;
+}
+
+
+/* Right Side */
+.wlc-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto auto; */
+    width: 50%;
+    min-width: 300px;
+    max-width: 500px;
+    /* background-color: greenyellow; */
+}
+
+
+.wlc-writing h3{
+    /* font-size: 3.1rem; */
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 600;
+}
+
+.wlc-writing h4{
+    font-size:  clamp(1.7rem, 2vw, 1.9rem);
+    font-family: var(--nuninto-sans);
+    font-weight: 500;
+}
+
+.wlc-writing h2 {
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+    font-weight: 600;
+}
+
+/* 
+.border-bottom-right {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  border-bottom: 10px solid orange;
+  border-right: 10px solid orange;
+  border-bottom-right-radius: 10px;
+} */
+
+
+@media (max-width: 850px) {
+    .welcoming-projects{
+        margin-bottom: 200px;
+        /* display: flex; */
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+
+    .border-top-left{
+        width: 150px;
+        height: 150px;
+        display: absolute;
+        top: 0;
+        left: 0;
+        border-top: 10px solid orange;
+        border-left: 10px solid orange;
+        border-top-left-radius: 10px;
+    }
+
+    .wlc-writing{
+        width: 80%;
+        font-family: var(--baloo-2);
+        display: block;
+        margin-top: -80px;
+        margin-bottom: 40px;
+        margin-left: 20%;
+    }
+
+    .wlc-left{
+        width: 100%;
+    }
+
+    .wlc-right{
+        width: 100%;
+    }
+}
+
+@media (max-height: 650px) {
+    .welcoming-projects{
+        height: 100vh;
+    }
+}
+
+@media (min-height: 1900px) {
+    .wlc-right{
+        max-width: 900px;
+    }
+}
