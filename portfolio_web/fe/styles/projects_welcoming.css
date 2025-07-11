@@ -5,7 +5,7 @@ main{
 }
 
 .welcoming-projects{
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
@@ -63,8 +63,12 @@ main{
 }
 
 .wlc-writing h2 {
-    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+    font-size: clamp(2.4rem, 4.7vw, 3.6rem);
     font-weight: 600;
+    background: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* 
