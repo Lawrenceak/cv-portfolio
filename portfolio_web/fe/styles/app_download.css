@@ -227,7 +227,11 @@ main{
     .top-title h4{
         margin-bottom: -10px;    
     }
+    .notes-disclaims ul{
+        width: 80%;
+        margin-bottom: 20px;
+    }
     .notes-disclaims p{
-        padding: 0 40px;
+        padding: 0 30px;
     }
 }
