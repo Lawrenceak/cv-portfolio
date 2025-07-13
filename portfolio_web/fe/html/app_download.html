@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Portfolio</title>
+
+    <!-- Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/app_download.css">
+
+</head>
+
+<body>
+    <main>
+        <section class="top-title">
+          <h1>Download <span id="noteit-design">NoteIt</span> for both <span id="android-design">Android</span> and <span id="windows-design">Windows</span> for Free!</h1>
+          <h4>You will be downloading the Beta version 3.0.0</h4>
+        </section>
+
+        <section class="download-area">
+
+          <div class="android-container">
+            <div class="android-card">
+                <h2>Android</h2>
+                <ul>
+                  <li><strong>Before clicking</strong> download make sure you read the notes and DISCLAIM written below.</li>
+                  <li>You are downloading this at your own risk.</li>
+                  <li>By clicking the download button you are agreeing to accept all of the notes and DISCLAIM mentioned in this page.</li>
+                </ul>
+                <button class="download-button js_btn_name" id="NoteIt-apk-btn">Download</button>
+              </div>
+          </div>
+
+          <div class="windows-container">
+            <div class="windows-card">
+              <h2>Windows</h2>
+                <ul>
+                  <li><strong>Before clicking</strong> download make sure you read the notes and DISCLAIM written below.</li>
+                  <li>You are downloading this at your own risk.</li>
+                  <li>By clicking the download button you are agreeing to accept all of the notes and DISCLAIM mentioned in this page.</li>
+                </ul>
+                <button class="download-button js_btn_name" id="NoteIt-exe-btn">Download</button>
+              </div>
+          </div>
+
+        </section>
+
+        <section class="notes-disclaims">
+          <h6>Notes</h6>
+          <p>This is the only official source for downloading this application. It is not available on any other website or platform.
+            <br>You cannot find the stable release as we did not published it yet.<br>Please carfully read the DISCLAIM below</p>
+        
+          <div class="fancy-line"></div>
+
+          <h2>DISCLAIMERS</h2>
+          <ul>
+            <li>This application is currently in its beta phase (version 3.0.0) and is not considered a stable release. Use at your own risk, as data loss may occur in the event of a malfunction.</li>
+            <li>Please also be cautious of potential security risks, such as virus injections or unauthorized access attempts. As of this version, the application does not collect, transmit, or use any of your personal data. All operations are fully local.</li>
+            <li>Furthermore, updates will not be downloaded automatically. To install a new version, you must do so manually from the official source provided.</li>
+          </ul>
+        </section>
+    </main>
+
+</body>
+
+<!-- id="appdownloadBtn" -->
+
+<script>
+  document.getElementById("NoteIt-apk-btn").addEventListener("click", function () {
+    const a = document.createElement("a");
+    a.href = "../../be/assets/app-release.apk"; // Correct path to real file
+    a.download = "app-release.apk"; // Suggested filename
+    document.body.appendChild(a);  // Required for Firefox
+    a.click();
+    document.body.removeChild(a);
+  });
+
+  document.getElementById("NoteIt-exe-btn").addEventListener("click", function () {
+    const a = document.createElement("a");
+    a.href = "../../be/assets/NoteIt.zip"; // Correct path to real file
+    a.download = "/NoteIt.zip"; // Suggested filename
+    document.body.appendChild(a);  // Required for Firefox
+    a.click();
+    document.body.removeChild(a);
+  });
+</script>
+
+
+</html>

@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    font-family: var(--baloo-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px 50px 40px;
+}
+
+
+/* Top Titles  
+   ---------- */
+.top-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.top-title h1{
+    font-size: 2.5rem;
+    font-weight: 600;   
+    margin-bottom: 5px; 
+}
+
+.top-title h4{
+    font-family: var(--nuninto-sans);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;    
+}
+
+#noteit-design, #android-design, #windows-design{
+    font-size: 2.5rem;
+    font-weight: 600;
+    background: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#android-design{
+    background: linear-gradient(to right, var(--color-third), var(--color-third-compl));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+} 
+
+#windows-design{
+    background: linear-gradient(to right, var(--color-fourth), var(--color-fourth-compl));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* Download Area 
+   ------------- */
+.download-area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 8%;
+    width: 100%;
+    max-width: 1900px;
+    justify-content: center;
+    column-gap: 5%;
+    row-gap: 30px;
+}
+
+/* Left and Right sides */
+.android-container, .windows-container{
+    width: 40%;
+    min-width: 310px;
+    height: 400px;
+    background-image: url("../imgs/bg1_dp.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.windows-container{
+    background-image: url("../imgs/bg2_dp.svg");
+    background-position: top;
+    /* background-color: aquamarine; */
+}
+
+.android-card, .windows-card{
+    min-width: 300px;
+    max-width: 360px;
+    height: 370px;
+    min-height: 300px;
+    background-color: rgba(255, 255, 255, 0.305);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px); /* for Safari */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.android-card:hover, .windows-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    /* animation-duration: 0.5s ease; */
+}
+
+.android-card h2, .windows-card h2{
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.android-card ul, .windows-card ul{
+    margin-bottom: 20px;
+}
+
+.android-card ul li, .windows-card ul li{
+    font-family: var(--nuninto-sans);
+    font-size: clamp(0.83rem, 2vw, 0.88rem);
+    font-weight: 400;
+}
+
+.android-card button, .windows-card button{
+    margin: 10px 0;
+}
+
+.android-card h2 {
+    background: linear-gradient(to right, var(--color-third) 0%, var(--color-third-compl) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.windows-card h2{
+    background: linear-gradient(to right, var(--color-fourth) 0%, var(--color-fourth-compl) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+@media (max-width: 1050px) {
+    .android-card ul, .windows-card ul{
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Separating Line
+   --------------- */
+.fancy-line {
+  height: 1.5px;
+  width: 70%;
+  /* max-width: 90%; */
+  background: rgba(128, 128, 128, 0.4);
+  border-radius: 10px;
+  margin: 50px auto 70px auto;
+}
+
+
+/* Notes and DISCLAIMS
+   ------------------- */
+
+.notes-disclaims{
+    font-family: var(--nuninto-sans);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.notes-disclaims h6{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 50px;
+    background: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.notes-disclaims p{
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: 300;
+    font-style: italic;
+}
+
+.notes-disclaims h2{
+    background: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.notes-disclaims ul{
+    width: 80%;
+    margin-bottom: 20px;
+}
+.notes-disclaims ul li{
+    font-size: 1.3rem;
+    font-family: 400;
+}
