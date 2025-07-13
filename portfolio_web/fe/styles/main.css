@@ -11,6 +11,12 @@
     --color-background: #ffffff;
     --color-primary: #F99C2C;
     --color-secondary: #F4C016;
+
+    --color-third: #39D14F;
+    --color-third-compl: #00FF25; /* compl = complementary*/
+    --color-fourth: #0AACC6;
+    --color-fourth-compl: #00DCFF;
+
     --color-text-primary: #ffffff;
     --color-text-secondary: #000000;
     --color-body: #0000009c;
