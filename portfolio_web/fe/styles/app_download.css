@@ -9,7 +9,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 40px 50px 40px;
+    padding: 30px 40px 50px 40px;
 }
 
 
@@ -21,16 +21,15 @@ main{
 }
 
 .top-title h1{
-    font-size: 2.1rem;
+    font-size: 2rem;
     font-weight: 600;   
     margin-bottom: 5px; 
 }
 
 .top-title h4{
     font-family: var(--nuninto-sans);
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 10px;    
+    font-size: 1.1rem;
+    font-weight: 600;   
 }
 
 #noteit-design, #android-design, #windows-design{
@@ -56,12 +55,6 @@ main{
     background-clip: text;
 }
 
-@media (max-width: 450px) {
-    .top-title h4{
-        margin-bottom: -10px;    
-    }
-}
-
 
 /* Download Area 
    ------------- */
@@ -81,7 +74,7 @@ main{
 .android-container, .windows-container{
     width: 40%;
     min-width: 310px;
-    height: 380px;
+    height: 370px;
     background-image: url("../imgs/bg1_dp.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -99,9 +92,8 @@ main{
 }
 
 .android-card, .windows-card{
-    min-width: 300px;
-    max-width: 340px;
-    height: 370px;
+    width: 310px;
+    height: 340px;
     min-height: 300px;
     background-color: rgba(255, 255, 255, 0.305);
     backdrop-filter: blur(50px);
@@ -125,7 +117,7 @@ main{
 }
 
 .android-card h2, .windows-card h2{
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -136,7 +128,7 @@ main{
 
 .android-card ul li, .windows-card ul li{
     font-family: var(--nuninto-sans);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 400;
 }
 
@@ -174,7 +166,7 @@ main{
   /* max-width: 90%; */
   background: rgba(128, 128, 128, 0.4);
   border-radius: 10px;
-  margin: 50px auto 70px auto;
+  margin: 50px auto 60px auto;
 }
 
 
@@ -190,7 +182,7 @@ main{
 }
 
 .notes-disclaims h6{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
     font-weight: bold;
     font-style: italic;
@@ -202,12 +194,13 @@ main{
 }
 
 .notes-disclaims p{
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     text-align: center;
     font-family: 300;
     font-style: italic;
 }
 
+/* The Disclaimer */
 .notes-disclaims h2{
     background: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 100%);
     -webkit-background-clip: text;
@@ -215,15 +208,26 @@ main{
     background-clip: text;
     align-items: center;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 15px;
 }
 
 .notes-disclaims ul{
-    width: 80%;
+    width: 70%;
     margin-bottom: 20px;
 }
+
 .notes-disclaims ul li{
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     font-family: 400;
+}
+
+
+@media (max-width: 450px) {
+    .top-title h4{
+        margin-bottom: -10px;    
+    }
+    .notes-disclaims p{
+        padding: 0 40px;
+    }
 }
