@@ -109,14 +109,13 @@ p{
     border-top-right-radius: 10px;
 }
 
-.play-button{
+.play-button, .apps-download-button{
     position: absolute;
     width: 55px;
     height: 55px;
     border-radius: 28px;
-    background-color: aqua;
-    top: 40%;
-    left: calc(55% - 55px);
+    top: calc(50% - 55px / 2);
+    left: calc(50% - 55px / 2);
     margin: 0;
     padding: 0;
     display: flex;
@@ -134,6 +133,12 @@ p{
     
 }
 
+.apps-download-button{
+    background-image: url('../imgs/download_btn.svg');
+    background-position: left 50% top 45%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: 16px;
+}
 
 @media (min-width: 1800px) {        
     h4{
