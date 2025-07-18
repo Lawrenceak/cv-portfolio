@@ -82,8 +82,8 @@
 <script>
   document.getElementById("NoteIt-apk-btn").addEventListener("click", function () {
     const a = document.createElement("a");
-    a.href = "../../be/assets/app-release.apk"; // Correct path to real file
-    a.download = "app-release.apk"; // Suggested filename
+    a.href = "../../../app-release.apk"; // Correct path to real file
+    a.download = "app-release.apk";
     document.body.appendChild(a);  // Required for Firefox
     a.click();
     document.body.removeChild(a);
@@ -91,13 +91,12 @@
 
   document.getElementById("NoteIt-exe-btn").addEventListener("click", function () {
     const a = document.createElement("a");
-    a.href = "../../../NoteIt.zip"; // Correct path to real file
-    a.download = "/NoteIt.zip"; // Suggested filename
+    a.href = "../../be/assets/NoteIt.zip"; // Correct path to real file
+    a.download = "NoteIt.zip";
     document.body.appendChild(a);  // Required for Firefox
     a.click();
     document.body.removeChild(a);
   });
 </script>
-
 
 </html>
