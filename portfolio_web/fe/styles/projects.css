@@ -2,7 +2,7 @@ body {
     padding: 50px 60px 20px 60px;
     font-family: var(--nuninto-sans);
     line-height: 1.6;
-    background-image: url('../imgs/main-bg.png');
+    background-image: url('../imgs/main-bg.svg');
     background-size: cover;         /* Make image cover the whole background */
     background-repeat: repeat;   /* Prevent tiling */
     background-position: top;
