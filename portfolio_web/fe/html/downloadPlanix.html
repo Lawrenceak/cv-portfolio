@@ -87,8 +87,8 @@
 <script>
   document.getElementById("Planix-apk-btn").addEventListener("click", function () {
     const a = document.createElement("a");
-    a.href = "https://drive.google.com/file/d/1bikyv98H0D-jMIlrtNRDV8Knx9QAvwrQ/view?usp=sharing"; // Correct path to real file
-    a.download = "app-release.zip";
+    a.href = "https://drive.google.com/uc?export=download&id=1bikyv98H0D-jMIlrtNRDV8Knx9QAvwrQ"; // Correct path to real file
+    a.download = "app-release.apk";
     document.body.appendChild(a);  // Required for Firefox
     a.click();
     document.body.removeChild(a);
@@ -102,7 +102,6 @@
   //   a.click();
   //   document.body.removeChild(a);
   // });
-  
 </script>
 
 
