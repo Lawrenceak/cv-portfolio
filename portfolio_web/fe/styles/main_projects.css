@@ -36,7 +36,7 @@
     height: 370px;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
-    padding: 15px 13px 20px 13px;
+    padding: 15px 13px 30px 13px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
     text-align: center;
@@ -90,6 +90,7 @@
         position: static;
         margin-bottom: 24px;
         width: 250px;
+        height: 390px;
     }
     .left-column {
         width: 80%;
@@ -107,6 +108,13 @@
     .projects-section{
         min-height: 120vh;
     }
+    /* .projects-card{
+        height:380px;
+    }
+    .project-card p {
+        font-size: 0.75rem;
+        background-color: brown;
+    } */
 }
 
 @media (max-height: 600px) {
