@@ -42,7 +42,7 @@
                   <li>By clicking the download button you are agreeing to accept all of the notes and disclaimers mentioned in this page.</li>
                 </ul>
                 <br style="margin-top: 10px;">
-                <button class="download-button js_btn_name" id="NoteIt-apk-btn">Download</button>
+                <button class="download-button js_btn_name" id="Planix-apk-btn">Download</button>
               </div>
           </div>
 <!-- 
@@ -85,23 +85,23 @@
 <!-- id="appdownloadBtn" -->
 
 <script>
-  document.getElementById("NoteIt-apk-btn").addEventListener("click", function () {
+  document.getElementById("Planix-apk-btn").addEventListener("click", function () {
     const a = document.createElement("a");
-    a.href = "../../be/assets/app-release.apk"; // Correct path to real file
-    a.download = "app-release.apk";
+    a.href = "../../be/assets/planixApp/app-release.zip"; // Correct path to real file
+    a.download = "app-release.zip";
     document.body.appendChild(a);  // Required for Firefox
     a.click();
     document.body.removeChild(a);
   });
 
-  document.getElementById("NoteIt-exe-btn").addEventListener("click", function () {
-    const a = document.createElement("a");
-    a.href = "../../be/assets/NoteIt.zip"; // Correct path to real file
-    a.download = "/NoteIt.zip";
-    document.body.appendChild(a);  // Required for Firefox
-    a.click();
-    document.body.removeChild(a);
-  });
+  // document.getElementById("NoteIt-exe-btn").addEventListener("click", function () {
+  //   const a = document.createElement("a");
+  //   a.href = "../../be/assets/NoteIt.zip"; // Correct path to real file
+  //   a.download = "/NoteIt.zip";
+  //   document.body.appendChild(a);  // Required for Firefox
+  //   a.click();
+  //   document.body.removeChild(a);
+  // });
 </script>
 
 
