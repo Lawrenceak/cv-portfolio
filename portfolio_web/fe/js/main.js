@@ -85,7 +85,7 @@ document.getElementById('send-message').addEventListener('click', async () => {
 
 
 document.getElementById('prj_seemore_btn').addEventListener('click', () => {
-    window.open('../../../web/index.html', '_blank');
+    window.open('../../web/index.html', '_blank');
 });
 
 
