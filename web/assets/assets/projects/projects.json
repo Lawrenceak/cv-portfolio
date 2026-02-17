@@ -1,0 +1,111 @@
+{
+  "projects": [
+    {
+      "title": "Swarm Robotics System",
+      "imagePath": "swarmRobotics.png",
+      "description": "Swarm robotics system using ROS2 and Python, integrating Raspberry Pi, Lidar-based SLAM, and MQTT for real-time communication. Achieved high coordination efficiency in both simulated environments and lab testing. Collaborated closely with two teammates, demonstrating effective communication and seamless idea exchange throughout the project.",
+      "date": "Sep 2024 - Jun 2025",
+      "projState": "Finished",
+      "isLiked": false,
+      "link": "",
+      "field": "Robotics"
+    },
+    {
+      "title": "CV - Portfolio Website",
+      "imagePath": "myWeb.png",
+      "description": "This website is actually fully made by me! From the designing of the website - which I also get some inspo from dribbble - to the entire coding process and publishing.",
+      "date": "Jun 2025 - Present",
+      "projState": "OnUpgrade",
+      "isLiked": true,
+      "link": "https://lawrenceaboukarroum.netlify.app/portfolio_web/fe/html/projects.html",
+      "linkType": "Web",
+      "field": "Software Dev"
+    },
+    {
+      "title": "Smart Robot",
+      "imagePath": "smartRobot.jpg",
+      "description": "Developed a robot capable of obstacle avoidance and line-following using a custom controller with greyscale and ultrasonic sensors. Achieved a great navigation accuracy in varied lighting and terrain. - Done with a team",
+      "date": "May 2024",
+      "projState": "Finished",
+      "isLiked": false,
+      "link": "https://www.youtube.com/shorts/GpCHDOonlNM",
+      "linkType": "Video",
+      "field": "Robotics"
+    },
+    {
+      "title": "Planix - Android Application",
+      "imagePath": "planix.png",
+      "description": "A task management application with a modern design. Currently developing AI-powered features to help users manage tasks more effectively using the Eisenhower Matrix for prioritization, along with a calendar, progress tracker, and additional productivity tools.",
+      "date": "Aug 2025 - Sep 2025",
+      "projState": "Finished",
+      "isLiked": false,
+      "link": "https://lawrenceaboukarroum.netlify.app/portfolio_web/fe/html/downloadplanix",
+      "linkType": "Download",
+      "field": "Software Dev"
+    },
+    {
+      "title": "JL Games - Game Development",
+      "imagePath": "jlGame.png",
+      "description": "Developed a 2-in-1 game as the final project for the Advanced Programming course, in collaboration with one teammate, using C# and WinForms. The game demonstrates a solid foundation in object-oriented programming (OOP), C#, and working with frameworks.",
+      "date": "May 2023",
+      "projState": "Finished",
+      "isLiked": true,
+      "link": "https://www.youtube.com/watch?v=HhshmlY3JMg&t=55s",
+      "linkType": "Video",
+      "field": "Software Dev"
+    },
+    {
+      "title": "Unity - Game development",
+      "imagePath": "unitygame1.png",
+      "description": "Developed a 2D game using the Unity Engine with both C++ and C#. This project showcases a strong foundation in core programming concepts, as well as critical thinking and logical problem-solving skills. It also reflects adaptability in learning new programming techniques and applying them effectively within a game development environment.",
+      "date": "July 2023",
+      "projState": "Finished",
+      "isLiked": true,
+      "link": "https://www.youtube.com/watch?v=CLXwFXMFkHM",
+      "linkType": "Video",
+      "field": "Software Dev"
+    },
+    {
+      "title": "CAD Design",
+      "imagePath": "airplaneCad1.png",
+      "description": "This was one of the most challenging projects in my CAD course using Autodesk Inventor. The airplane design involved advanced modeling, assemblies, and stress analysis, strengthening my skills in precision design and engineering problem-solving.",
+      "date": "Feb 2025",
+      "projState": "Finished",
+      "isLiked": true,
+      "link": "",
+      "field": "CAD Design"
+    },
+    {
+      "title": "Room Ambient Monitoring System",
+      "imagePath": "empty.png",
+      "description": "Designed a fire prevention system using Arduino to monitor temperature, humidity, and flammable gases. Applied electrical circuit concepts to manage sensors, actuators, and power consumption, while ensuring a lightweight and stable program for reliable performance.",
+      "date": "Nov 2023",
+      "projState": "Finished",
+      "isLiked": true,
+      "link": "",
+      "field": "Electronics"
+    },
+    {
+      "title": "NoteIt - Android/Windows Application",
+      "imagePath": "noteit.png",
+      "description": "A note-taking application developed using the Flutter framework. Features include note organization and management, with integration of REST APIs and a local SQLite database for data storage and retrieval.",
+      "date": "Jun 2025 - Jul 2025",
+      "projState": "Finished",
+      "isLiked": true,
+      "link": "https://lawrenceaboukarroum.netlify.app/portfolio_web/fe/html/app_download",
+      "linkType": "Download",
+      "field": "Software Dev"
+    },
+    {
+      "title": "Garage Automated System",
+      "imagePath": "garageSystem.png",
+      "description": "Designed a complete garage management system using only fundamental logic gates, showcasing strong expertise in digital logic design and sequential circuit architecture. The system controls both entry and exit gates, automates customer billing, ensures organized vehicle flow, and includes security logic that detects illegal access attempts and triggers alarms. Its modular architecture is flexible and adaptable to any two-gate garage layout.",
+      "date": "Feb 2026",
+      "projState": "Finished",
+      "isLiked": false,
+      "link": "https://youtu.be/ctqVvS1lxb0",
+      "linkType": "Video",
+      "field": "Electronics"
+    }
+  ]
+}
