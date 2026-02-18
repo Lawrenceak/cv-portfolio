@@ -111,11 +111,11 @@
       "title": "Precise Temperature Measurement",
       "imagePath": "preciseTempMeasure.png",
       "description": "(More details soon)",
-      "date": "Feb 2026",
+      "date": "Dec 2025",
       "projState": "Finished",
       "isLiked": false,
-      "link": "",
-      "linkType": "Video",
+      "link": "https://github.com/Lawrenceak/PersonalProjects/blob/main/Precise%20Temperature%20Measurments/About.md",
+      "linkType": "Web",
       "field": "Electronics"
     }
   ]
