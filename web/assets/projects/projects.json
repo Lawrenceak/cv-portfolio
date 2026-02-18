@@ -110,7 +110,7 @@
     {
       "title": "Precise Temperature Measurement",
       "imagePath": "preciseTempMeasure.png",
-      "description": "(More details soon)",
+      "description": "Developed a high-accuracy temperature sensing system using a simple circuit and filtered ADC acquisition. Implemented multi-sample averaging, digital low-pass filtering, and the Steinhart-Hart equation on an ESP32 to accurately model thermistor nonlinearity. The result is a fast-response, stable, and cost-effective solution with precision comparable to commercial digital sensors.",
       "date": "Dec 2025",
       "projState": "Finished",
       "isLiked": false,
