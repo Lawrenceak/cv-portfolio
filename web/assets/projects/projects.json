@@ -106,6 +106,17 @@
       "link": "https://youtu.be/ctqVvS1lxb0",
       "linkType": "Video",
       "field": "Electronics"
+    },
+    {
+      "title": "Precise Temperature Measurement",
+      "imagePath": "empty.png",
+      "description": "Lorem ipsum dolor sit amet",
+      "date": "Feb 2026",
+      "projState": "Finished",
+      "isLiked": false,
+      "link": "",
+      "linkType": "Video",
+      "field": "Electronics"
     }
   ]
 }
