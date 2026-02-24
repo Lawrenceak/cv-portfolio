@@ -117,3 +117,13 @@
     width: 175px;
     height: 38px;
 }
+
+.sign{
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto 20px auto;
+    font-family: var(--nuninto-sans);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
