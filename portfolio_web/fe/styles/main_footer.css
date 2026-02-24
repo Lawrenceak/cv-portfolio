@@ -49,11 +49,14 @@
         font-size: 0.75rem;
         height: 1.8rem;
     }
+}
+
+
+@media (max-width: 800px) {
     .footer-right{
         display: none;
     }
 }
-
 
 @media (max-width: 400px) {
     .contact-info{
@@ -110,7 +113,7 @@
 }
 
 .direct_message_design{
-    margin-top: 20px;
+    margin-top: 25px;
     width: 175px;
     height: 38px;
 }
