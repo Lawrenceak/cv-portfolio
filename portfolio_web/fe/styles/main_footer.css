@@ -1,13 +1,13 @@
 .footer {
   display: flex;
   flex-direction: row;
-  /* align-items: top; */
-  /* justify-content: space-between; */
+  align-items: top;
+  justify-content: space-between;
   flex-wrap: nowrap;
-  /* margin: 80px 80px 40px 80px;
+  margin: 80px 80px 40px 80px;
   padding: 30px 40px;
   border-radius: 15px;
-  gap: 2vw; */
+  gap: 2vw;
 }
 
 .footer-left{
