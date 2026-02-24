@@ -49,6 +49,9 @@
         font-size: 0.75rem;
         height: 1.8rem;
     }
+    .footer-right{
+        display: none;
+    }
 }
 
 
@@ -66,11 +69,11 @@
 
 /* Right Side */
 .footer-right{
-    width: 50%;
+    width: 45%;
 }
 
 .footer-right img{
-    width: 60%;
+    width: 50%;
 }
 
 @media (max-width: 1200px) {
