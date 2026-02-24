@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirecting | Lawrence's Portfolio</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0f172a;
+        color: #e2e8f0;
+        overflow: hidden;
+    }
+
+    /* subtle animated background glow */
+    body::before {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, #3b82f6, transparent 70%);
+        top: -100px;
+        right: -100px;
+        opacity: 0.2;
+        animation: float 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+        from { transform: translateY(0px); }
+        to { transform: translateY(40px); }
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+        padding: 40px;
+        max-width: 450px;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    .highlight {
+        background: linear-gradient(90deg, #3b82f6, #06b6d4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p {
+        font-size: 15px;
+        opacity: 0.7;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 22px;
+        border-radius: 25px;
+        border: 1px solid #3b82f6;
+        color: #3b82f6;
+        text-decoration: none;
+        transition: 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #3b82f6;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to <span class="highlight">My Portfolio</span></h1>
+    <p>Redirecting you to my work...</p>
+
+    <!-- Manual redirect button -->
+    <a class="btn" href="portfolio_web/fe/html/main.html">Enter Website</a>
+</div>
+
+<script>
+    // Auto redirect using your link
+    window.location.href = "portfolio_web/fe/html/main.html";
+</script>
+
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="refresh" content="0; URL=portfolio_web/fe/html/main.html" />
   <title>Redirecting...</title>
 
-  <!-- Google tag (gtag.js) -->
+  
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1DMKCL736"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,6 +122,6 @@
 
 </head>
 <body>
-  <p>If you are not redirected, <a href="portfolio_web/fe/html/main.html">click here</a>. </p>
+  <p>We are redirecting you, please If you are not redirected, <a href="portfolio_web/fe/html/main.html">click here</a>. </p>
 </body>
-</html>
+</html> -->
