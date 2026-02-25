@@ -20,6 +20,14 @@
     padding: 20px 0 35px 0;
 }
 
+.left-column .h2-second{
+    line-height: 1;
+}
+
+.left-column .h2-first{
+    line-height: 1.1;
+}
+
 .right-column {
   position: relative;
   min-height: 300px;  /* Control Height from here as well */
