@@ -114,6 +114,9 @@
         align-self: center;
         margin-bottom: 5px;
     }
+    .certificates{
+        padding: 20px;
+    }
 }
 
 .certificate-edition{
