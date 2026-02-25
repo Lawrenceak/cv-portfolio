@@ -188,32 +188,7 @@ nav, .nav-links, .download-button, .logo {
     z-index: 1100;
 }
 
-
 /* Responsive nav: burger menu */
-@media (max-width: 1200px) {
-    .nav-container {
-        gap: 16vw;
-    }
-}
-
-@media (max-width: 850px) {
-    .nav-container {
-        gap: 0;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.2rem 1rem;
-        width: 100%;
-    }
-    .logo {
-        margin-left: 1vw;
-        text-align: left;
-    }
-    .hamburger {
-        margin-left: auto;
-        margin-right: 5vw;
-    }
-}
-
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -236,6 +211,30 @@ nav, .nav-links, .download-button, .logo {
     }
     .hamburger {
         display: block;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-container {
+        gap: 10vw;
+    }
+}
+
+@media (max-width: 850px) {
+    .nav-container {
+        gap: 0;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2rem 1rem;
+        width: 100%;
+    }
+    .logo {
+        margin-left: 1vw;
+        text-align: left;
+    }
+    .hamburger {
+        margin-left: auto;
+        margin-right: 5vw;
     }
 }
 
