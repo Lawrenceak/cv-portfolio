@@ -5,20 +5,25 @@
   margin: 80px 80px 40px 80px;
   padding: 30px 40px;
   border-radius: 15px;
-  gap: 2vw;
+  /* background-color: blueviolet; */
 }
 
 .inner-footer{
     display: flex;
     flex-direction: row;
     align-items: top;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: start;
+    flex-wrap: nowrap;
+    padding-right: 15px;
+    /* background-color: green; */
+    margin-top: 10px;
 }
 
 .footer-left{
-    width: 50%;
+    flex: 1;
     font-family: var(--nuninto-sans);
+    /* background-color: greenyellow; */
+    min-width: 350px;
 }
 
 .footer h2{
@@ -31,7 +36,7 @@
     text-decoration: none;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     border-left: 5px solid var(--color-primary);
     padding-left: 15px;
@@ -44,38 +49,6 @@
     /* text-overflow: ellipsis; */
 }
 
-@media (max-width: 400px) {
-    .contact-info{
-        font-size: 0.6rem;
-        height: 1.6rem;
-    }
-}
-
-@media (max-width: 500px) {
-    .contact-info{
-        font-size: 0.75rem;
-        height: 1.8rem;
-    }
-}
-
-
-@media (max-width: 650px) {
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: top;
-        justify-content: start;
-        border-radius: 15px;
-        gap: 2vw;
-    }
-}
-
-
-@media (max-width: 850px) {
-    .footer-right{
-        display: none;
-    }
-}
 
 .contact-info a span{
     font-weight: 600;
@@ -84,11 +57,16 @@
 
 /* Right Side */
 .footer-right{
-    width: 45%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 430px;
 }
 
 .footer-right img{
     width: 50%;
+    height: auto;
 }
 
 @media (max-width: 1200px) {
@@ -109,13 +87,35 @@
         justify-self: center;
         width: 100%;
     }
-    
-    .footer-right{
-        width: 40%;
-    }
 
     #hr-message{
         height: 150px;
+    }
+}
+
+@media (max-width: 890px) {
+    .inner-footer {
+        justify-content: start;
+    }
+    .footer-right{
+        display: none;
+    }
+    .footer-left{
+       flex: 1;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-info{
+        font-size: 0.75rem;
+        height: 1.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-info{
+        font-size: 0.6rem;
+        height: 1.6rem;
     }
 }
 
