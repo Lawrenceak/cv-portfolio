@@ -132,8 +132,9 @@
 
 .direct_message_bt_design{
     margin-top: 25px;
-    width: 175px;
+    width: 165px;
     height: 38px;
+    font-size: 1rem;
 }
 
 .sign{
