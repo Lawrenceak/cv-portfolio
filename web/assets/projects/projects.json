@@ -107,6 +107,28 @@
       "link": "https://github.com/Lawrenceak/PersonalProjects/blob/main/Precise%20Temperature%20Measurments/About.md",
       "linkType": "Web",
       "field": "Electronics"
+    },
+    {
+      "title": "Oscillator using IC555",
+      "imagePath": "empty.png",
+      "description": "Coming Soon",
+      "date": "Feb 2026",
+      "projState": "OnUpgrade",
+      "isLiked": false,
+      "link": "",
+      "linkType": "Web",
+      "field": "Electronics"
+    },
+    {
+      "title": "Buck Converter (Step Down Chopper), DC-DC open-loop",
+      "imagePath": "empty.png",
+      "description": "Coming Soon",
+      "date": "Feb 2026",
+      "projState": "OnUpgrade",
+      "isLiked": false,
+      "link": "",
+      "linkType": "Web",
+      "field": "Electronics"
     }
   ]
 }

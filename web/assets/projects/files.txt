@@ -8,3 +8,9 @@
     "link": "",
     "field": "Electronics"
 },
+
+
+// States of a project: 
+// Finished, Ongoing, Planned, OnUpgrade 
+// Project link type
+// Video, Image, Download, Web
