@@ -120,7 +120,7 @@
       "field": "Electronics"
     },
     {
-      "title": "Buck Converter (Step Down Chopper), DC-DC open-loop",
+      "title": "Buck Converter, DC-DC open-loop",
       "imagePath": "buck_converter1.png",
       "description": "Open-loop buck converter designed to step down 8V DC to 5.1V under nominal load. An LM555 timer generates the PWM signal driving an NMOS switch. The 4 µH inductor and 50 µF capacitor form the LC filter to smooth the switched waveform, while a diode provides the freewheeling path during the off state. The system delivers stable output at fixed duty cycle, with load-dependent voltage variation as expected in open-loop control. This design serves as the foundation for a future closed-loop, feedback-regulated upgrade targeting >80% efficiency.",
       "date": "Feb 2026",
