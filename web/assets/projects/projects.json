@@ -121,7 +121,7 @@
     },
     {
       "title": "Buck Converter (Step Down Chopper), DC-DC open-loop",
-      "imagePath": "empty.png",
+      "imagePath": "buck_converter1.png",
       "description": "Coming Soon",
       "date": "Feb 2026",
       "projState": "OnUpgrade",
