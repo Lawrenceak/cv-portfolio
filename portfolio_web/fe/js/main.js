@@ -52,36 +52,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 
 // Direct messaging via email
-document.getElementById('send-message').addEventListener('click', async () => {
-    const email = document.getElementById('hr-email').value.trim();
-    const message = document.getElementById('hr-message').value.trim();
+// document.getElementById('send-message').addEventListener('click', async () => {
+//     const email = document.getElementById('hr-email').value.trim();
+//     const message = document.getElementById('hr-message').value.trim();
 
-    if (!email || !message) {
-        alert('Please fill in both your email and the message.');
-        return;
-    }
+//     if (!email || !message) {
+//         alert('Please fill in both your email and the message.');
+//         return;
+//     }
 
-    try {
-        const response = await fetch('../../be/send_email.php', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email, message })
-            });
+//     try {
+//         const response = await fetch('../../be/send_email.php', {
+//             method: 'POST',
+//             headers: { 'Content-Type': 'application/json' },
+//             body: JSON.stringify({ email, message })
+//             });
 
 
-        const result = await response.text();
+//         const result = await response.text();
 
-        if (response.ok) {
-            alert('Your message has been successfully sent!');
-            document.getElementById('hr-email').value = '';
-            document.getElementById('hr-message').value = '';
-        } else {
-            alert('Failed to send your message: ' + result);
-        }
-    } catch (error) {
-        alert('Error sending message: ' + error.message);
-    }
-});
+//         if (response.ok) {
+//             alert('Your message has been successfully sent!');
+//             document.getElementById('hr-email').value = '';
+//             document.getElementById('hr-message').value = '';
+//         } else {
+//             alert('Failed to send your message: ' + result);
+//         }
+//     } catch (error) {
+//         alert('Error sending message: ' + error.message);
+//     }
+// });
 
 
 document.getElementById('prj_seemore_btn').addEventListener('click', () => {
