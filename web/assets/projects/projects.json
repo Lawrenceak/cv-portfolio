@@ -33,6 +33,28 @@
       "field": "Robotics"
     },
     {
+      "title": "Ploutos - Money Management App",
+      "imagePath": "ploutos_ad2.png",
+      "description": "A task management application with a modern design. Currently developing AI-powered features to help users manage tasks more effectively using the Eisenhower Matrix for prioritization, along with a calendar, progress tracker, and additional productivity tools.",
+      "date": "Feb 2026 - Present",
+      "projState": "Finished",
+      "isLiked": false,
+      "link": "https://lempix.netlify.app/",
+      "linkType": "Web",
+      "field": "Software Dev"
+    },
+    {
+      "title": "LEMPIX Website",
+      "imagePath": "lempixCore.png",
+      "description": "Lempix official website - Not just a website.. This is where you can explore Lempix Core, access all our applications, and stay updated with the latest news and updates.",
+      "date": "Apr 2026 - Present",
+      "projState": "Finished",
+      "isLiked": false,
+      "link": "https://lempix.netlify.app/",
+      "linkType": "Web",
+      "field": "Software Dev"
+    },
+    {
       "title": "Planix - Android Application",
       "imagePath": "planix.png",
       "description": "A task management application with a modern design. Currently developing AI-powered features to help users manage tasks more effectively using the Eisenhower Matrix for prioritization, along with a calendar, progress tracker, and additional productivity tools.",
