@@ -85,7 +85,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 document.getElementById('prj_seemore_btn').addEventListener('click', () => {
-    window.open('/web/index.html', '_blank');
+    window.open('/web/', '_blank');
 });
 
 
