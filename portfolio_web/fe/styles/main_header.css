@@ -43,6 +43,10 @@ header {
     font-weight: bold;
 }
 
+.about-me-note{
+    font-size: 1rem;
+}
+
 .standard-btn {
     background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
     color: white;
