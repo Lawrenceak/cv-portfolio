@@ -35,7 +35,7 @@ header {
 
 .header-left p {
     margin-top: 30px;
-    margin-bottom: 45px;
+    margin-bottom: 0px;
     font-size: 1.2rem;
     font-family: var(--inria-sans);
     color: #00000099;
@@ -44,6 +44,8 @@ header {
 }
 
 .about-me-note{
+    margin-top: 20;
+    margin-bottom: 45px;
     font-size: 1rem;
     color: var(--color-primary);
 }
