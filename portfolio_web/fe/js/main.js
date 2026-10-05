@@ -85,7 +85,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 document.getElementById('prj_seemore_btn').addEventListener('click', () => {
-    window.open('/web/', '_blank');
+    window.open('https://lawrence-abou-karroum.web.app/portfolio/', '_blank');
 });
 
 
