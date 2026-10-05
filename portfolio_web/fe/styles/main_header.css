@@ -44,9 +44,9 @@ header {
 }
 
 .about-me-note{
-    margin-top: 10px;
-    margin-bottom: 45px;
-    font-size: 1rem;
+    margin-top: 10px !important;
+    margin-bottom: 45px !important;
+    font-size: 1rem !important;
     color: var(--color-primary) !important;
 }
 
